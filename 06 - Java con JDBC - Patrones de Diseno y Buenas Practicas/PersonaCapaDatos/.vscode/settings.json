@@ -3,7 +3,8 @@
   "java.project.outputPath": "bin",
   "java.project.referencedLibraries": [
     "lib/**/*.jar",
-    "d:\\JavaGonzaloNivel3\\drivers-jdbc\\mariadb-java-client-3.3.3.jar"
+    "d:\\JavaGonzaloNivel3\\drivers-jdbc\\mariadb-java-client-3.3.3.jar",
+    "d:\\JavaGonzaloNivel3\\drivers-jdbc\\sqlite-jdbc-3.43.0.0.jar"
   ],
   "cSpell.words": ["Conexion", "DAOJDBC", "jdbc", "pstmt"]
 }

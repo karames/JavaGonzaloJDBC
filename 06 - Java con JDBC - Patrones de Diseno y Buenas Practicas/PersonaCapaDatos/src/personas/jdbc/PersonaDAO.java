@@ -6,11 +6,11 @@ import personas.dto.PersonaDTO;
 
 public interface PersonaDAO {
 
-    // public abstract int insert(PersonaDTO persona) throws SQLException;
+    public abstract int insert(PersonaDTO persona) throws SQLException;
 
-    // public abstract int update(PersonaDTO persona) throws SQLException;
+    public abstract int update(PersonaDTO persona) throws SQLException;
 
-    // public abstract int delete(PersonaDTO persona) throws SQLException;
+    public abstract int delete(PersonaDTO persona) throws SQLException;
 
     public abstract List<PersonaDTO> select() throws SQLException;
 

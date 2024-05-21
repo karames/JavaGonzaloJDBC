@@ -7,18 +7,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Conexion {
-    private static String HOST = "jdbc:mariadb://localhost:3306/";
+    // private static String HOST = "jdbc:mariadb://localhost:3306/";
+    private static String HOST = "jdbc:sqlite:D:/JavaGonzaloNivel3/drivers-jdbc/sga-nono.db";
     private static String BD = "sga-nono";
     private static String USER = "root";
     private static String PASSWORD = "";
 
+    // conexion con la base de datos
     public static Connection conectarBD() {
         System.out.println("");
         System.out.println("conectando con la base de datos ");
         Connection conn = null;
 
         try {
-            conn = DriverManager.getConnection(HOST + BD, USER, PASSWORD);
+            // conn = DriverManager.getConnection(HOST + BD, USER, PASSWORD);
+            conn = DriverManager.getConnection(HOST);
             System.out.println("OKEY SE HA ESTABLICIDO CONESION CON LA BASE DE DATOS");
         } catch (SQLException sqle) {
             System.out.println("error no se pudo conectar con la bese de datos");
