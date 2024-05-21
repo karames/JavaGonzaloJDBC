@@ -19,8 +19,8 @@ public class PersonaCapaDatosTest {
 
             // insertar
             // PersonaDTO persona = new PersonaDTO();
-            // persona.setNombre("gonzalo");
-            // persona.setApellido("de dios");
+            // persona.setNombre("Gonzalo");
+            // persona.setApellido("de Dios");
             // personaDao.insert(persona);
 
             // update
@@ -34,7 +34,7 @@ public class PersonaCapaDatosTest {
             // personaDao.delete(new PersonaDTO(1));
 
         } catch (SQLException sqle) {
-            System.out.println("ecepcion en la capa de prueba");
+            System.out.println("Excepción en la capa de prueba");
             sqle.printStackTrace();
         }
     }

@@ -6,5 +6,13 @@
     "d:\\JavaGonzaloNivel3\\drivers-jdbc\\mariadb-java-client-3.3.3.jar",
     "d:\\JavaGonzaloNivel3\\drivers-jdbc\\sqlite-jdbc-3.43.0.0.jar"
   ],
-  "cSpell.words": ["Conexion", "DAOJDBC", "jdbc", "pstmt"]
+  "cSpell.words": [
+    "Conexion",
+    "DAOJDBC",
+    "jdbc",
+    "mariadb",
+    "pstmt",
+    "sqle",
+    "sqlite"
+  ]
 }

@@ -22,7 +22,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
         this.userConn = conn;
     }
 
-    // metodo select
+    // Select
     public List<PersonaDTO> select() throws SQLException {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -54,7 +54,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
         return personasLista;
     }
 
-    // metodo insert
+    // Insert
     public int insert(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -63,7 +63,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
             conn = (this.userConn != null) ? this.userConn : Conexion.conectarBD();
             System.out.println("\n ejecutando query: " + SQL_INSERT);
             pstmt = conn.prepareStatement(SQL_INSERT);
-            int index = 1; // contaodr de parametros(columnas)
+            int index = 1; // contador de parámetros (columnas)
             pstmt.setString(index++, persona.getNombre());
             pstmt.setString(index, persona.getApellido());
             rows = pstmt.executeUpdate();
@@ -78,7 +78,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
         return rows;
     }
 
-    // metodo update
+    // Update
     public int update(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -87,7 +87,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
             conn = (this.userConn != null) ? this.userConn : Conexion.conectarBD();
             System.out.println("\n ejecutando query: " + SQL_UPDATE);
             pstmt = conn.prepareStatement(SQL_UPDATE);
-            int index = 1; // contaodr de parametros(columnas)
+            int index = 1; // contador de parámetros (columnas)
             pstmt.setString(index++, persona.getNombre());
             pstmt.setString(index++, persona.getApellido());
             pstmt.setInt(index, persona.getId());
@@ -103,7 +103,7 @@ public class PersonaDAOJDBC implements PersonaDAO {
         return rows;
     }
 
-    // metodo delete
+    // Delete
     public int delete(PersonaDTO persona) throws SQLException {
         Connection conn = null;
         PreparedStatement pstmt = null;
